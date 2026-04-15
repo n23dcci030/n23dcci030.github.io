@@ -1,64 +1,66 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
+title: "CV"
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Thông tin cá nhân
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+- **Họ và tên:** Vòong Đăng Hưng
+- **Ngành học:** IoT
+- **Trường:** Học viện Công Nghệ Bưu chính Viễn Thông
+- **Email:** yourmail@gmail.com
+- **GitHub:** [https://github.com/yourusername](https://github.com/yourusername)
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+---
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Học vấn
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+### Học viện Công Nghệ Bưu chính Viễn Thông
+- **Ngành:** Internet of Things (IoT)
+- **Thời gian:** 2022 - nay
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### THPT
+- **Thời gian:** 2019 - 2022
+
+---
+
+## Kỹ năng
+
+| Kỹ năng | Mức độ |
+|--------|--------|
+| C/C++ | Cơ bản - Khá |
+| Arduino | Khá |
+| Git/GitHub | Khá |
+| HTML/CSS | Cơ bản |
+| C# / Windows Forms | Cơ bản |
+| Proteus | Cơ bản |
+| Làm việc nhóm | Khá |
+
+---
+
+## Dự án
+
+### 1. Arduino LM35 Temp Monitor
+- Đọc dữ liệu nhiệt độ từ cảm biến LM35 qua các chân analog.
+- Hiển thị dữ liệu qua Serial Monitor.
+- Quản lý source code bằng Git và GitHub.
+
+### 2. Ứng dụng hiển thị đồ thị nhiệt độ trên máy tính
+- Xây dựng ứng dụng desktop để nhận dữ liệu từ Arduino.
+- Hiển thị nhiệt độ theo thời gian bằng đồ thị.
+- Kết hợp xử lý dữ liệu cảm biến và giao diện người dùng.
+
+### 3. Mô phỏng mạch LM35 trên Proteus
+- Thiết kế và kiểm tra mô phỏng mạch.
+- Hỗ trợ kiểm thử trước khi triển khai thực tế.
+
+---
+
+## Mục tiêu
+
+- Phát triển kỹ năng trong lĩnh vực IoT và hệ thống nhúng.
+- Nâng cao khả năng xây dựng ứng dụng kết nối phần cứng và phần mềm.
+- Hoàn thiện kỹ năng làm việc nhóm với Git/GitHub.
