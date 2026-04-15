@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang cá nhân</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2a5db0;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .menu {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .menu a {
+      color: #3d4d63;
+      font-size: 15px;
+    }
+
+    .menu a:hover {
+      color: #000;
+    }
+
+    .main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 24px 40px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 56px;
+    }
+
+    .sidebar {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 24px;
+      border: 1px solid #eee;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+
+    .role,
+    .org,
+    .school {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .school a {
+      color: #2a5db0;
+    }
+
+    .socials {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #1f6fd1;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .content h1 {
+      font-size: 64px;
+      font-weight: 300;
+      margin-bottom: 18px;
+    }
+
+    .content p {
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .bottom-grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .edu-item {
+      margin-bottom: 18px;
+    }
+
+    .edu-item strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .edu-item span {
+      color: #666;
+      font-size: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      .content h1 {
+        font-size: 42px;
+      }
+
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">Tên của bạn</div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#talks">Talks</a>
+        <a href="#resources">Resources</a>
+        <a href="#students">Students</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="home">
+    <aside class="sidebar">
+      <img
+        class="avatar"
+        src="https://via.placeholder.com/300x300.png?text=Avatar"
+        alt="Avatar"
+      />
+      <div class="name">Nguyễn Văn A</div>
+      <div class="role">Sinh viên Công nghệ thông tin</div>
+      <div class="org">Trường Đại học ...</div>
+      <div class="school"><a href="#">Khoa Công nghệ thông tin</a></div>
+
+      <div class="socials">
+        <a href="mailto:email@example.com" title="Email">@</a>
+        <a href="#" title="GitHub">G</a>
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="LinkedIn">in</a>
+      </div>
+    </aside>
+
+    <section class="content">
+      <h1>Biography</h1>
+
+      <p>
+        Tôi là sinh viên đang học về lập trình, hệ thống nhúng và phát triển ứng dụng.
+        Tôi quan tâm đến Arduino, IoT, xử lý tín hiệu cảm biến và xây dựng giao diện
+        hiển thị dữ liệu trên máy tính.
+      </p>
+
+      <p>
+        Hiện tại tôi đang thực hiện các bài tập về Git, GitHub, GitHub Pages và dự án
+        đo nhiệt độ sử dụng cảm biến LM35. Tôi muốn xây dựng một trang cá nhân đơn giản,
+        rõ ràng và chuyên nghiệp để giới thiệu bản thân và các dự án học tập.
+      </p>
+
+      <p>
+        Trang này được tạo bằng HTML/CSS và có thể triển khai trực tiếp bằng GitHub Pages.
+      </p>
+
+      <div class="bottom-grid">
+        <div>
+          <div class="section-title">Interests</div>
+          <ul>
+            <li>Lập trình nhúng với Arduino</li>
+            <li>IoT và cảm biến</li>
+            <li>Ứng dụng desktop hiển thị đồ thị</li>
+            <li>Git và GitHub</li>
+            <li>Thiết kế web cơ bản</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="section-title">Education</div>
+
+          <div class="edu-item">
+            <strong>Đại học ..., 2022 - nay</strong>
+            <span>Ngành Công nghệ thông tin</span>
+          </div>
+
+          <div class="edu-item">
+            <strong>THPT ..., 2019 - 2022</strong>
+            <span>Tốt nghiệp phổ thông</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
